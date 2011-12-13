@@ -100,7 +100,7 @@ sub { bottom: -0.25em; }
 
 ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
 dd { margin: 0 0 0 40px; }
-nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 1; }
 
 
 /* =============================================================================
@@ -208,10 +208,170 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author: 
+   Author: djm
    ========================================================================== */
+body {
+  background-color: #e2edff;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  line-height: 125%;
+  margin: 0;
+  padding: 0;
+ }
+h1, h2, h3 {
+  font-family: "trebuchet MS", Helvitica, Arial, sans-serif;
+}
 
+h1 {
+  font-size: x-large;
+  color: white;
+  padding-top: 2em;
+  padding-bottom: .2em;
+  padding-left: .4em;
+  margin: 0;
+  background: green url(../img/header-bg.jpg) repeat-y right;
+}
 
+h2 {
+  color: navy;
+  font-size: 130%;
+  font-weight: normal;
+  padding-top: 15px;
+}
+
+h2, ul {
+  margin-top: 15px;
+}
+
+li {
+  font-size: small;
+  list-style-type: none;
+}
+
+p {
+  font-size: small;
+  color: navy;
+}
+
+#tagline p {
+  font-style: italic;
+  font-family: Georgia, Times, serif;
+  border-top: 3px solid #7da5d8;
+  border-bottom: 3px solid #7da5d8;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  padding-left: .8em;
+  margin: 0;
+  background: #bed8f3 url(../img/tagline-fade.jpg) repeat-y right;
+}
+
+/* Link Styles */
+a {font-weight: bold;}
+a:link {color: black;}
+a:visited {color: navy;}
+a:hover {text-decoration: none; color: white; background-color: navy;}
+a:active {color:aqua; background-color: navy;}
+
+.fun {
+  color: #339999;
+  font-family: Georgia, Times, serif;
+  letter-spacing: 0.05em;
+}
+
+/* Navigation */
+nav {
+  width: 180px;
+  height: 484px;
+  background: #7da5d8 url(../img/nav-bg.jpg) no-repeat;
+}
+
+nav ul {margin:0; padding-top:15px;}
+
+header {
+  border-top: 3px solid #7da5d8;
+}
+
+/* Body Content (main) */
+#main {
+  left: 200px;
+  position: absolute;
+  top: 6.54em;
+}
+
+header {
+  width: 100%
+}
+
+.feature {
+  float: right;
+  margin: 10px;
+}
+
+figure {
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid navy;
+  margin-bottom: 20px;
+}
+
+.galleryphoto img {
+  border: 15px solid white;
+}
+
+figcaption {
+  display: block;
+  font-size: 65%;
+  font-weight: bold;
+  margin-top: 0;
+  width: 430px;
+  line-height: 1.4em;
+}
+
+figcaption span {
+  font-weight: normal;
+  color: gray;
+}
+
+figure img {
+  border: 15px solid white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px black, -2px -2px 15px black;
+  margin-bottom: 10px;
+}
+
+table.topics {
+  border-collapse: collapse;
+}
+
+table.topics th, table.topics td {
+  padding: 4px;
+  border: 1px solid #000066;
+}
+
+table.topics th {
+  font-size: x-small;
+  text-align: left;
+  background: #241374 url(../img/header-bg.jpg);
+  color: #ffffff;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+table.topics td {
+  font-size: small;
+  background: #e2edff url(../img/td.jpg) repeat-x top;
+}
+
+table.topics caption {color: #000066; font-size: small; font-weight: bold; padding-bottom: 5px; text-align: left;}
+/* Form Styles */
+form.contact {line-height: 150%; margin: 0; margin-top: -15px; padding: 0;}
+form.contact fieldset {border: 2px solid navy; padding: 10px;}
+form.contact legend {color: navy; font-size: small; font-weight: bold; padding: 5px;}
+form.contact label {color: blue; font-size: small; font-weight: bold;}
+
+aside {background: white; color: gray; display: block; float: right; font-style: italic; margin: 10px; padding: 10px; width: 30%;}
+aside blockquote {color: #006; font-size: 1.2em; font-style: normal; line-height: 1.4; margin: 0 0 0.5em 0;}
 
 
 
